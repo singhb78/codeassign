@@ -1,0 +1,21 @@
+<?php
+for ($x = 1; $x <= 100; $x += 1) {
+	switch ($x) {
+		case $x % 3 == 0 && $x % 5 == 0:
+			$msg = "Linianos<br>";
+			break;
+			
+		case $x % 3 == 0:
+			$msg = "Linio<br>";
+			break;
+			
+		case $x % 5 == 0:
+			$msg = "IT<br>";
+			break;
+  default:
+    $msg = $x."<br>"; 
+	}
+	
+	echo $msg;
+}
+?>
